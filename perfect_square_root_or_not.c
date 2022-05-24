@@ -1,19 +1,16 @@
-
 #include<stdio.h>
 #include<math.h>
 int main()
 {
-    int n,a,b;
+    int n;
+    int iv;
+    float fv;
     scanf("%d",&n);
-    a=sqrt(n);
-    b=a*a;
-    if(b==n)
-    {
-        printf("True");
-    }
+    fv=sqrt((double)n);
+    iv=fv;
+    if(iv==fv)
+    printf("True");
     else
-    {
-        printf("False");
-    }
+    printf("False");
     return 0;
 }
