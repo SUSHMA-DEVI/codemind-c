@@ -2,18 +2,24 @@
 #include<math.h>
 int main()
 {
-    int n,sum=0,r,d,m;
+    int n;
     scanf("%d",&n);
-    m=n;
-    d=(int)log10(n)+1;
-    while(n>0)
+    int n1=n,c=0;
+    while(n1!=0)
     {
-        r=n%10;
-        sum=sum+ceil(pow(r,d));
-        n=n/10;
-        d--;
+        n1/=10;
+        c++;
     }
-    if(sum==m)
+    n1=n;
+    int sum=0;
+    while(n1!=0)
+    {
+        int rem=n1%10;
+        sum+=pow(rem,c);
+        n1/=10;
+        c--;
+    }
+    if(sum==n)
     printf("True");
     else
     printf("False");
