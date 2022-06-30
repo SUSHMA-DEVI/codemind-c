@@ -30,3 +30,4 @@ int main()
         printf("Not Unique Number");
     }
 }
+
