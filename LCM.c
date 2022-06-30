@@ -1,18 +1,18 @@
+#include <stdio.h>
+int main() {
+    int n1, n2, max;
+  ;
+    scanf("%d %d", &n1, &n2);
 
-#include<stdio.h>
-int main()
-{
-    int a,b,lcm,temp,gcd,num;
-    scanf("%d%d",&a,&b);
-    int num1=a,num2=b;
-    while(b !=0)
-    {
-        temp=b;
-        b=a%b;
-        a=temp;
+    // maximum number between n1 and n2 is stored in max
+    max = (n1 > n2) ? n1 : n2;
+
+    while (1) {
+        if (max % n1 == 0 && max % n2 == 0) {
+            printf("%d",max);
+            break;
+        }
+        ++max;
     }
-    gcd=a;
-    lcm=(num1*num2)/gcd;
-    printf("%d",lcm);
     return 0;
 }
