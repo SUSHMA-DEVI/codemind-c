@@ -6,7 +6,7 @@ int main()
     a=0;
     b=1;
     if(n==0)
-    printf("True");
+       printf("True");
     c=a+b;
     while(c<n)
     {
@@ -23,3 +23,4 @@ int main()
         printf("False");
     }
 }
+
