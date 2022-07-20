@@ -25,7 +25,7 @@ int main()
         {
             if(prime(i))
             {
-               c++; 
+                c++;
             }
         }
     }
